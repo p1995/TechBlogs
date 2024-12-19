@@ -1,21 +1,22 @@
 * {
-    /* background-color: #8D0B41; */
-    background-color:#FFF8E6;
-    line-height: 25px;
+  /* background-color: #8D0B41; */
+  background-color: #fff8e6;
+  line-height: 25px;
 }
-p{
-    margin: 0;
+p {
+  margin: 0;
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+  line-height: 35px;
 }
-body{   
-    color: #8D0B41;
-    font-family: "Libre Baskerville", serif;
+body {
+  color: #8d0b41;
+  font-family: "Libre Baskerville", serif;
 }
-img{
-    object-fit: contain;
-    margin-left: 25%;
-    width: 50%;
-    margin-top: 20px;
+img {
+  object-fit: contain;
+  margin-left: 25%;
+  width: 50%;
+  margin-top: 20px;
 }
