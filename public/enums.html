@@ -16,10 +16,9 @@
     <p>Enums in Typescript are a way to define named constants to numbers for better code readability and organization</p>
     <h2>Use Case</h2>
     Suppose we call an API that returns the role in the form of number for example 0 stands Admin, 1 Guest and so on. 
-    <h3>Challenge</h3>
     we have a function called getPermission that returns the role as string based on the backend field. The function accepts an argument called role which is of number type
     <img src="../assets/Images/WithoutEnums.png" height="500" alt="Enums"/>
-    <h3>Disadvantages without using Enums</h3>
+    <h3>Problems</h3>
         <ul>
             <li>No type safety (any number can be passed):
                 we can accidentally call the function with invalid numbers like 3,4,5 etc. One solution is to define a union Literal for example (role:0|1|2) but this is not efficient if roles increase in the future.
