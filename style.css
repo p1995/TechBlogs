@@ -10,6 +10,7 @@ body{
     font-family: "Libre Baskerville", serif;
 }
 img{
-    object-fit: cover;
+    object-fit: contain;
     margin-left: 25%;
+    width: 50%;
 }
