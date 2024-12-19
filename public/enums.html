@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen's Blog</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Enums</h1>
+    <h2>What are Enums?</h2>
+    <hr/>
+    <p>Enums in Typescript are a way to define named constants to numbers for better code readability and organization</p>
+    <h2>Use Case</h2>
+    Suppose we call an API that returns the role in the form of number for example 0 stands Admin, 1 Guest and so on. 
+    <h3>Challenge</h3>
+    we have a function called getPermission that returns the role as string based on the backend field. The function accepts an argument called role which is of number type
+    <img src="../assets/Images/WithoutEnums.png" height="500" alt="Enums"/>
+    <h3>Disadvantages without using Enums</h3>
+        <ul>
+            <li>No type safety (any number can be passed):
+                we can accidentally call the function with invalid numbers like 3,4,5 etc. One solution is to define a union Literal for example (role:0|1|2) but this is not efficient if roles increase in the future.
+            </li>
+            <li>Harder to maintain and read</li>
+            <li>risk of invalid assignments</li>
+        </ul>
+    <h3>Solution: Enums</h3>
+    <img src="../assets/Images/Enums.png" height="500" alt="Enums"/>
+   <p>This prevents passing out of range values without having to create a custom type alias. Makes readable possible but replacing the number with the keywords during runtime checks.</p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+* {
+    /* background-color: #8D0B41; */
+    background-color:#FFF8E6;
+}
+h1{
+    text-align: center;
+}
+body{   
+    color: #8D0B41;
+    font-family: "Libre Baskerville", serif;
+}
+img{
+    object-fit: cover;
+    margin-left: 25%;
+}
