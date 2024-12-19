@@ -1,6 +1,10 @@
 * {
     /* background-color: #8D0B41; */
     background-color:#FFF8E6;
+    line-height: 25px;
+}
+p{
+    margin: 0;
 }
 h1{
     text-align: center;
@@ -13,4 +17,5 @@ img{
     object-fit: contain;
     margin-left: 25%;
     width: 50%;
+    margin-top: 20px;
 }
