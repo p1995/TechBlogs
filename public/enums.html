@@ -17,7 +17,7 @@
     <h2>Use Case:</h2>
     Suppose we call an API that returns the role in the form of number for example 0 stands Admin, 1 Guest and so on. <br/>
     In the below screenshot, we have a function called getPermission that returns the role as string based on the backend field. The function accepts an argument called role which is of number type
-    <img src="../assets/Images/WithoutEnums.png" height="500" alt="Enums"/>
+    <img src="../assets/Images/WithoutEnums.png" alt="Enums"/>
     <h3>Problems:</h3>
         <ul>
             <li>No type safety (any number can be passed):
@@ -27,7 +27,7 @@
             <li>risk of invalid assignments</li>
         </ul>
     <h3>Solution: Use Enums</h3>
-    <img src="../assets/Images/Enums.png" height="500" alt="Enums"/>
+    <img src="../assets/Images/Enums.png" alt="Enums"/>
     <h2>Conclusion:</h2>
     <p>Enums prevent passing out-of-range values without having to create a custom type alias. Makes readable possible but replacing the number with the keywords during runtime checks.</p>
 </body>
