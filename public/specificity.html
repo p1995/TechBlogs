@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praveen's Blog</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Specificity</h1>
+    <hr />
+    <h2>What is Specificity?</h2>
+    <p>
+      CSS specificity determines which rule is applied when multiple rules
+      target the same element. It is calculated based on the type of selectors
+      used, with a hierarchy from least to most specific:
+    </p>
+    <h3>Type selectors (element selectors):</h3>
+    <p>These have the lowest specificity. Example: div { color: red; }</p>
+
+    <h3>Class selectors:</h3>
+    <p>More specific than type selectors. Example: .box { color: blue; }</p>
+    <h3>Attribute Selector:</h3>
+    <p>More specific than Class. Example div[draggable] { color:orange; }</p>
+    <h3>ID selectors:</h3>
+    <p>
+      Even more specific than Attribute selectors. Example: #header { color:
+      green; }
+    </p>
+    <h3>Inline styles:</h3>
+    <p>
+      The most specific, applied directly in the HTML element. Example: div
+      style="color: yellow;"
+    </p>
+
+    <h3>Specificity Order (from least to most specific):</h3>
+    <p>
+      Type selectors<br />
+      Class selectors<br />
+      ID selectors<br />
+      Inline styles<br />
+    </p>
+  </body>
+</html>
