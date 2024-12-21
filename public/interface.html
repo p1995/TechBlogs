@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen's Blog</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Interface</h1>
+    <hr/>
+    <h2>What is Interface?</h2>
+    <p>An interface in programming defines a contract for classes and objects, specifying methods and properties that must be have without implementing them. It helps ensure consistency across different classes and objects.</p>
+    <h2>Interface with class</h2>
+    <img src="../assets/Images/interfaceWithClass.png" alt="Interface"/>
+    <p> A class can also implement 2 or more interfaces</p>
+    <img src="../assets/Images/interfaceWithClassMuliplteImplements.png" alt="Interface implemented twice in class"/>
+    <p>if two interfaces have the same method name but specify different return types, it will result in a type conflict when a class tries to implement both interfaces. TypeScript enforces that the class must resolve the conflicting types and provide a single return type. Same is true with objects.</p>
+    <img src="../assets/Images/interfaceConflict.png" alt="Interface Conflict"/>
+    <h2>Interface with an object</h2>
+    <img src="../assets/Images/interfaceObject.png" alt="Interface object"/>
+    <h2>Interface inheritance</h2>
+    This is done using extends keyword
+    <img src="../assets/Images/interfaceExtends.png" alt="Interface extending another interface"/>
+</body>
+</html>
