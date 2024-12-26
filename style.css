@@ -1,6 +1,6 @@
 * {
   /* background-color: #8D0B41; */
-  background-color: #fff8e6;
+  background-color: #fff8e6 !important;
   line-height: 25px;
 }
 p {
@@ -13,10 +13,18 @@ h1 {
 body {
   color: #8d0b41;
   font-family: "Libre Baskerville", serif;
+  padding: 10px;
 }
 img {
   object-fit: contain;
   margin-left: 25%;
   width: 50%;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  img {
+    margin-left: 0;
+    width: 100%;
+  }
 }
