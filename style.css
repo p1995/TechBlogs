@@ -28,3 +28,8 @@ img {
     width: 100%;
   }
 }
+
+.no-underline li a{
+  text-decoration: none;
+  color:#8d0b41
+}
