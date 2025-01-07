@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praveen's Blog</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>How to use __dirname in ES Module?</h1>
+    <hr />
+    <h2>What are __dirname?</h2>
+    <p>
+      __dirnames is needed to work with the absolute paths. It makes sure your
+      file is read relative to the file directory rather than current working
+      directory set in your terminal. In CommonJS, __dirname is a special
+      variable that gives the directory name of the current module. However, in
+      ES modules, __dirname does not exist.
+    </p>
+    <h2>Use Case:</h2>
+    <p>
+      If your app's directory structure changes or you're running the script
+      from different locations, using __dirname ensures the correct path is
+      always used.
+    </p>
+    <img src="../assets/Images/dirnameCommonjs.png" alt="readFile fails" />
+    <p>
+      The same code fails with
+      ES module because __dirname is not a special variable there.
+    </p>
+    <img src="../assets/Images/dirnameES6error.png" alt="readFile fails" />
+    <h3>Solution:</h3>
+    <p>Follow these steps:</p>
+    <ol>
+      <li>
+        <strong>import { dirname } from "path";</strong><br />
+        <ul>
+          <li>Import dirname from built-in path module</li>
+        </ul>
+      </li>
+      <li>
+        <strong>import { fileURLToPath } from "url";</strong><br />
+        <ul>
+          <li>
+            It is used to convert a file URL (e.g., file://) to a file path.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>const __dirname = dirname(fileURLToPath(import.meta.url));</strong><br />
+        <ul>
+          <li>import.meta.url gives the URL of the current module (e.g., file:// URL).</li>
+          <li>fileURLToPath(import.meta.url) converts this URL to a file path.</li>
+          <li>dirname() then extracts the directory part of the file path.</li>
+          <li>Finally, this result is assigned to the variable __dirname, effectively replicating the behavior of __dirname in CommonJS.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>The final code looks likes:</p>
+    <img src="../assets/Images/dirnameES6Solution.png" alt="Enums" />
+    <h2>Conclusion:</h2>
+    <p>
+        __dirname is a special varaible in commonJS. Since this variable doesn't exist in ES module, we have explicitly write bunch of code to make it possible.
+    </p>
+  </body>
+</html>
