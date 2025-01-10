@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen's Blog</title>
+    <link rel="stylesheet" href="../../style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Screen Splitter</h1>
+    <hr/>
+    <h2>Screen Splitter?</h2>
+    <p>here we layout two component passed from the child component. The spacing can be controlled from the parent component through props</p>
+    <p>src/components/splitScreen.jsx</p>
+    <img src="../../assets/Images/splitScreen.tsx" alt="screensplitter" style="float:right;margin-left:0"/>
+    <p  style="margin-top:50px">we use styled-component so that we can add styles in js file. Notice the individual child items are accessed via array destructuring. we are passing default arguments for spacing so the left and right items are spaced evenly if widths are not passed.</p>
+    <p style="clear:right">Finally they are referneced in the parent component</p>
+    <p>src/app.jsx</p>
+    <img src="../../assets/Images/appSplit.png" alt="app"/>
+</body>
+</html>

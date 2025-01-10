@@ -1,6 +1,6 @@
 * {
   /* background-color: #8D0B41; */
-  background-color: #fff8e6 !important;
+  background-color: #FEF9E1 !important;
   line-height: 25px;
 }
 p {
@@ -20,6 +20,18 @@ img {
   margin-left: 25%;
   width: 50%;
   margin-top: 20px;
+}
+
+.code{
+  background-color: #E5D0AC !important;
+  padding: 2px;
+}
+
+.large-code{
+  margin: 10px 0;
+    display: inline-block;
+    padding: 20px;
+    min-width: 30%;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praveen's Blog</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Sets</h1>
+    <hr />
+    <h2>What are Sets?</h2>
+    <p>
+      Sets are similar to map except they store unique values, not key-value
+      pairs. Example {1,2,3}
+    </p>
+    <h2>Most common Sets methods:</h2>
+    <ol>
+      <li>
+        <span class="code">add(value)</span>: Adds a value. <br />
+        <span class="code large-code"> mySet.add(1);</span>
+      </li>
+      <li>
+        <span class="code">delete(value)</span>: Removes a value.<br />
+        <span class="code large-code">mySet.delete(1);</span>
+      </li>
+      <li>
+        <span class="code">has(value)</span>: Checks if a value exists.<br /><span
+          class="code large-code"
+          >mySet.has(1);</span
+        >
+      </li>
+      <li>
+        <span class="code">clear()</span>: Removes all values.<br /><span
+          class="code large-code"
+          >mySet.clear();</span
+        >
+      </li>
+      <li>
+        <span class="code">size</span>: Returns the number of values.
+        <br /><span class="code large-code">mySet.size;</span>
+      </li>
+      <li>
+        <span class="code">keys() / values()</span>: Returns an iterator of
+        values. <br /><span class="code large-code"
+          >for (const val of mySet.values()) console.log(val);</span
+        >
+      </li>
+      <li>
+        <span class="code">entries()</span>: Returns [value, value] pairs.<br /><span
+          class="code large-code"
+          >mySet.entries();</span
+        >
+      </li>
+      <li>
+        <span class="code">forEach(callback)</span>: Executes a callback for
+        each value. <br /><span class="code large-code"
+          >mySet.forEach(val => console.log(val));</span
+        >
+      </li>
+    </ol>
+  </body>
+</html>
